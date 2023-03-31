@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#D4E5F5">
+  <meta webc:is="meta-description" webc:nokeep>
+  <meta name="generator" :content="eleventy.generator">
+
+  <title webc:is="meta-title" :title="site.title" webc:nokeep></title>
+
+  <link webc:is="link-canonical" webc:nokeep>
+
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <link rel="apple-touch-icon" href="/public/icons/apple-touch-icon-iphone-60x60-precomposed.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/public/icons/apple-touch-icon-ipad-76x76-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="/public/icons/apple-touch-icon-iphone-retina-120x120-precomposed.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="/public/icons/apple-touch-icon-ipad-retina-152x152-precomposed.png">
+
+  <link rel="stylesheet" href="/stylesheets/style.css" webc:keep>
+  <style @raw="getCSS(page.url)" webc:keep></style>
+  <script @raw="getJS(page.url)" webc:keep></script>
+
+</head>
+
+<body>
+  <a href="#main" class="visually-hidden skip-to-content">Skip to content</a>
+  <header>
+    <a href="/">
+      <logo aria-hidden></logo>
+    </a>
+  </header>
+  <main id="main">
+    <template @html="content" webc:nokeep></template>
+  </main>
+  <site-footer webc:is="site-footer" webc:nokeep></site-footer>
+
+  <script @raw="getBundle('js', 'defer')" webc:keep></script>
+</body>
+
+</html>

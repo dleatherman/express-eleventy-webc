@@ -1,0 +1,9 @@
+---
+layout: "layout.webc"
+permalink: "/blog/"
+---
+
+<ul>
+  <li webc:for="post of this.collections.posts" webc:is="post-link" :href="post.url" :title="post.data.title">
+  </li>
+</ul>

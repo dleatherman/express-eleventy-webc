@@ -1,0 +1,6 @@
+---
+layout: "layout.webc"
+---
+<a href="/blog/">📝 Blog</a>
+
+<article @html="content"></article>

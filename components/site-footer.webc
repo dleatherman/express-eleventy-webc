@@ -1,0 +1,10 @@
+<style>
+  footer {
+    font-size: 1.2rem;
+    padding: .5rem;
+    text-align: center;
+  }
+</style>
+<footer>
+  <p>A small express + eleventy demo by <a href="https://danleatherman.com/">Dan Leatherman</a></p>
+</footer>
