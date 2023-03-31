@@ -1,5 +1,5 @@
 ---
-layout: "layout.webc"
+layout: "blog-layout.webc"
 permalink: "/blog/"
 ---
 
