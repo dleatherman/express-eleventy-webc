@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm-run-all dev:*",
-    "dev:blog": "eleventy",
+    "start": "npm-run-all --parallel dev:*",
+    "dev:blog": "eleventy --watch --incremental",
     "blog": "eleventy --serve",
     "dev:serve": "nodemon ./bin/www",
     "run": "node ./bin/www"
