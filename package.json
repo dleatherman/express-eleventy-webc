@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm-run-all dev:*",
+    "start": "npm-run-all dev:*",
     "dev:blog": "eleventy",
     "blog": "eleventy --serve",
     "dev:serve": "nodemon ./bin/www",
-    "start": "eleventy && node ./bin/www"
+    "run": "node ./bin/www"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
