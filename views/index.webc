@@ -20,7 +20,7 @@
   <a href="#main" class="visually-hidden skip-to-content">Skip to content</a>
   <header webc:is="site-header" webc:nokeep></header>
   <main id="main">
-    <template @html="content" webc:nokeep></template>
+    <!-- <template @html="content" webc:nokeep></template> -->
   </main>
   <site-footer webc:is="site-footer" webc:nokeep></site-footer>
 </body>
